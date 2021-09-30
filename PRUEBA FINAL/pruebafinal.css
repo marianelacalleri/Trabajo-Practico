@@ -1,0 +1,211 @@
+:root {
+    --color-nav: rgb(216, 219, 226); 
+    --color-nav-opaco: rgba(216, 219, 226, 0.1); 
+    --color-menu: rgb(169, 188, 208);
+    --color-item: rgb(218, 164, 154); 
+    --color-footer: rgb(88, 164, 176);
+    --color-atras: rgb(55, 63, 81); 
+    --color-prueba: rgb(240, 113, 103, 0.7);
+
+    
+    --fuentenav: 'Montserrat Alternates', sans-serif;
+    --fuentetitulo: 'Lora', serif;
+    --fuenteparrafo: 'Athiti', sans-serif;
+   
+
+}
+
+* {
+    box-sizing: border-box;
+    
+}  
+
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-footer);
+    font-family: var(--fuentenav);
+    
+
+}
+
+
+/*ESTO VA SI O SIIIII*/
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px black solid;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 5%;
+    
+   
+
+}
+
+/*ESTO RE VAAA*/
+.flexbox-h1 {
+    flex-grow: 1;
+    text-align: center;
+    align-self: center;
+    
+}
+
+
+body {
+    margin:0;
+}
+
+ul {
+    display: inline;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-menu); 
+    
+}
+
+li {
+    
+    display: inline;
+    text-align: center;
+    padding: 10px 0px;
+      
+}
+
+li a {
+    padding: 15px 30px;
+    text-decoration: none;
+            
+}
+    
+.active, li a:hover {
+    background-color: var(--color-atras); 
+    color: var(--color-nav);
+}
+
+.button {
+    transition-duration: 0.5s;
+    float: right;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 0.5fr);
+    grid-row-gap: 50px;
+    /* height: 100vh; */
+    
+   
+} 
+
+.grid-item {
+    /* border: 1px black solid; */
+    /* border-top: 5px black solid; */
+    background-color: var(--color-nav-opaco);
+    height: 13rem;
+    padding: 5%;
+    
+}
+
+   
+
+.grid-item3, .grid-item7 {
+   margin-left: 50%; 
+   background-color: var(--color-prueba);
+   
+}
+
+.grid-item6 {
+    margin-right: 50%;
+    background-color: var(--color-prueba);
+}
+
+.grid-item1 {
+    background-color: var(--color-nav);
+       
+}
+
+.grid-item1, 
+.grid-item2 {
+    border-top: 5px var(--color-nav) solid; 
+}
+
+h1 {
+    color: var(--color-atras);
+    font-family: var(--fuentetitulo);
+    font-size: 2em;
+}
+
+h2 {
+    color: var(--color-footer); 
+    text-align: right;
+    padding: 5%;
+    align-content: center;
+    font-family: var(--fuentetitulo);
+  
+  
+    
+    
+   }
+
+h3 {
+    color: var(--color-atras);
+    font-family: var(--fuentenav);
+}
+
+#der {
+    
+    text-align: right;
+    padding-right: 10%;
+    padding-top: 15%;
+}
+
+#izq {
+    
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 15%;
+   
+}
+
+div > p {
+    text-align: center;
+    /* padding: 5%; */
+    color: var(--color-atras);
+    font-family: var(--fuenteparrafo);
+}
+
+p {
+    text-align: center;
+    
+}
+
+
+footer {
+   
+    background-color: var(--color-footer);
+    font-family: var(--fuenteparrafo);
+    padding: 0;
+    text-align: center;
+    
+}
+
+.footer {
+    margin-top: 1%;
+    align-content: center;
+}
+
+#footer {
+    padding: 0 0 2% 0;
+    margin: 0;
+    
+}
+
+#redsoc {
+    color: var(--color-atras);
+    text-align: center;
+}
+
